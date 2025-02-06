@@ -8,7 +8,7 @@ itsdangerous
 Jinja2 
 joblib 
 MarkupSafe 
-mkl-service==2.4.0
+mkl-service
 mkl_fft 
 mkl_random 
 numexpr 

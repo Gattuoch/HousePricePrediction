@@ -45,6 +45,8 @@
 
         /* Add styling for the form */
         form {
+              linear-gradient(rgba(255, 126, 95, 0.5), rgba(254, 180, 123, 0.5)), /* Gradient with transparency */
+              url(house.jpg); /* Replace with your image path */
             margin-top: 20px;
         }
 
@@ -96,7 +98,7 @@
         <!-- Form for input fields -->
         
 <form id="predictionForm">
-    <label for="beds"> Number of Bedrooms</label>
+    <label for="beds">Number of Bedrooms:</label>
     <select id="beds" name="beds">
         <option value="" disabled selected>Select number of bedrooms</option>
         {% for bedroom in bedrooms %}
@@ -112,7 +114,7 @@
         {% endfor %}
     </select>
 
-    <label for="size">House size </label>
+    <label for="size">House Size: </label>
     <select id="size" name="size">
         <option value="" disabled selected>Select size of the house</option>
         {% for house_size in sizes %}
@@ -120,7 +122,7 @@
         {% endfor %}
     </select>
 
-    <label for="zip_code"> House Hold Number </label>
+    <label for="zip_code">Household ZIP Code: </label>
     <select id="zip_code" name="zip_code">
         <option value="" disabled selected>Select  code</option>
         {% for zip_code in zip_codes %}
